@@ -1,11 +1,11 @@
 package main
 
-import g "./greet"
+import "./greet"
 
 func main() {
-  g.SayHi("World")
-  g.SayHi("Daniel")
+	greet.SayHi("World")
+	greet.SayHi("Daniel")
 
-  // This is not an exported function, so these calls would not work
-  // g.logger("Hello")
+	// This is not an exported function, so these calls would not work
+	// greet.logger("Hello")
 }
